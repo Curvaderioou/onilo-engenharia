@@ -169,28 +169,36 @@
         </div>
       </div>
 
-      <form action="" class="form">
+      <form class="form formphp" action="enviar.php">
         <div>
           <div class="form-line">
-            <label for="">Nome</label>
-            <input type="text" placeholder="Nome completo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome completo">
           </div>
           <div class="form-line">
-            <label for="">Telefone</label>
-            <input type="text" placeholder="Telefone com DDD">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Telefone com DDD">
           </div>
           <div class="form-line">
-            <label for="">E-mail</label>
-            <input type="text" placeholder="seuemail@provedor.com">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="seuemail@provedor.com">
+          </div>
+          <div class="nao-aparece">
+            <label class="nao-aparece">Se você não é um robo, deixe em branco</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+          </div>
+          <div class="nao-aparece">
+              <label class="nao-aparece">Se você não é um robo, não mude este campo</label>
+              <input type="text" class="nao-aparece" name="dontchange" value="http">
           </div>
         </div>
 
         <div>
-          <label for="">Descrição</label>
-          <textarea name="" id=""></textarea>
+          <label for="textarea">Descrição</label>
+          <textarea name="textarea" id="textarea" name="textarea"></textarea>
         </div>
 
-        <button class="btn"> Enviar </button>
+        <button class="btn" id="enviar" name="enviar" type="submit"> Enviar </button>
       </form>
     </div>
   </article>

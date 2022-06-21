@@ -63,6 +63,11 @@ h4 {
   font-size: 1.25rem;
 }
 
+.nao-aparece {
+  display: none;
+  position: absolute;
+}
+
 @media only screen and (max-width: 650px) {
   h1 {
     font-size: 1.75rem;

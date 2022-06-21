@@ -1,0 +1,60 @@
+.services {
+  margin: 100px auto;
+  padding-top: 40px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 100px;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.services-card {
+  border: 2px solid #D9D9D9;
+  width: 300px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.services-card h2{
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 1.125em;
+}
+
+.background-service-title {
+  background: blue;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.services-grid .services-card:nth-child(1) .background-service-title {
+  background: linear-gradient(271.49deg, #5DA649 10.3%, #246432 103.2%);
+}
+.services-grid .services-card:nth-child(2) .background-service-title {
+  background: linear-gradient(271.49deg, #65BFD0 10.3%, #1581D1 103.2%);
+}
+.services-grid .services-card:nth-child(3) .background-service-title {
+  background: linear-gradient(271.49deg, #DA1D5C 10.3%, #B4232D 103.2%);
+}
+.services-grid .services-card:nth-child(4) .background-service-title {
+  background: linear-gradient(271.49deg, #F7CA05 10.3%, #FBA326 103.2%);
+}
+.services-grid .services-card:nth-child(5) .background-service-title {
+  background: linear-gradient(271.49deg, #B72760 10.3%, #822F63 103.2%);
+}
+.services-grid .services-card:nth-child(6) .background-service-title {
+  background: linear-gradient(272.22deg, #DD5D22 -2.88%, #F5A025 -2.87%, #DE5E23 103.36%);
+}
+
+.services .btn {
+  margin: 0 auto;
+}

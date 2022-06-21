@@ -1,0 +1,111 @@
+.header {
+  display: grid;
+  grid-template-columns: minmax(200px, 400px) 1fr;
+}
+
+.grid-nav {
+  display: grid;
+  grid-template-rows: 0.75fr 1fr;
+  align-items: center;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-menu a {
+  display: flex;
+  align-items: center;  
+}
+.top-menu a:hover span {
+  color: #286834;
+}
+
+.top-menu img {
+  display: inline-block;  
+  margin-right: 5px;
+}
+
+.top-menu span {
+  color: #0F1010;
+}
+
+.logotipo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: max-content;
+  padding-left: 10px;
+}
+
+.nav-menu {
+  background: #286834;
+  display: flex;
+  justify-content: end;
+  justify-items: end;
+  height: 100%;
+  align-items: center;
+  padding: 0px 40px;
+  position: relative;
+}
+
+.nav-menu:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 90px;
+  clip-path: polygon(0 0, 0 23%, 87% 0);
+  background: #F7FBF7;
+  left: 0;
+  top: 0;
+}
+
+.nav-menu a{
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+
+.nav-menu a + a{
+  margin-left: 40px;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .logotipo {
+    margin: 0 auto 10px auto;
+    grid-row: 2/3;
+  }
+
+  .top-menu {
+    justify-content: center;
+    margin: 10px 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .logotipo {
+    margin: 0 auto 10px auto;
+    grid-row: 2/3
+  }
+
+  .top-menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+  }
+
+  .top-menu a:nth-child(2) {
+    display: none;
+  }
+
+}

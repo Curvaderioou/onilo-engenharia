@@ -1,0 +1,44 @@
+.about {
+  background: url(/img/background-footer.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about h3{
+  text-align: left;
+  color: #F7FBF7;
+}
+
+.about h3:after{
+  content: url(/img/separador-alt.svg);
+}
+
+.about-gallery {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.about-gallery > div:nth-child(2) img + img, .about-gallery > div:nth-child(3) img + img {
+  margin-top: 12px;
+}
+
+
+/*Footer*/
+.footer {
+  color: #0F1010;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width:850px) {
+  .about-gallery {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+}

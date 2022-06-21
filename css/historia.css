@@ -1,0 +1,55 @@
+.history {
+  background: url(/img/background-history.jpg);
+  padding: 80px 0px;
+}
+
+.history-grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.card-history {
+  background: rgba(247, 251, 247, .9);
+  color: #0F1010;
+  padding: 40px;
+}
+.card-history h3 {
+  text-align: left;
+}
+
+.card-history:nth-child(1) {
+  max-width: 700px;
+}
+
+.card-history:nth-child(2) {
+  max-width: 550px;
+  justify-self: end;
+}
+
+.card-history p {
+  margin-top: 20px;
+  font-size: 1.125rem;
+}
+.card-history ul li {
+  margin: 10px 0px;
+  font-size: 1.125rem;
+}
+.card-history ul li::before {
+  content: "";
+  background: #64CB48;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 450px) {
+  .card-history {
+    padding: 40px 20px;
+  }
+
+  .card-history p {
+    font-size: 1.125rem;
+  }
+}

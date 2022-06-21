@@ -1,0 +1,33 @@
+.bg-main {
+  background: url(/img/background-main.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 150px ;
+  padding-bottom: 100px;
+  display: grid;
+  align-items: center;
+}
+
+.main p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  max-width: 650px;
+  line-height: 1.5em;
+  margin: 20px auto 0px auto;
+}
+
+.main .btn {
+  margin: 0 auto ;
+}
+
+.main strong {
+  color: #64CB48;
+}
+
+@media only screen and (max-width: 650px) {
+  .main p {
+    font-size: 1.125rem;
+    margin: 20px auto ;
+    line-height: 1.5rem;
+  }
+}
